@@ -7,26 +7,20 @@
 extern crate futures_await as futures;
 
 use futures::prelude::{async, await};
-use futures::io::{AsyncReadExt, AsyncWriteExt, CoreAsyncRead, CoreAsyncWrite};
-
-#[derive(Debug)]
-pub enum Error<TxError, RxError> {
-    Tx(TxError),
-    Rx(RxError),
-}
+use futures::future::Either;
+use futures::io::{AsyncReadExt, CoreAsyncRead, CoreAsyncWrite};
 
 #[async]
 #[allow(unreachable_code, unreachable_patterns)]
 pub fn main<'a, Tx, Rx>(
     mut tx: Tx,
-    mut rx: Rx) -> Result<!, Error<Tx::Error, Rx::Error>>
+    mut rx: Rx) -> Result<!, Either<Rx::Error, Tx::Error>>
 where
     Tx: CoreAsyncWrite + 'a,
     Rx: CoreAsyncRead + 'a,
 {
     loop {
-        let (_, bytes) = await!((&mut rx).read_exact([0; 5])).map_err(Error::Rx)?;
-        let (tx_, _) = await!(tx.write_all(bytes)).map_err(Error::Tx)?;
-        tx = tx_;
+        let (rx, tx) = (&mut rx, &mut tx);
+        await!(rx.copy_into_with_buffer(tx, [0; 5]))?;
     }
 }
