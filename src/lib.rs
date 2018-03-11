@@ -7,7 +7,7 @@
 extern crate futures_await as futures;
 
 use futures::prelude::{async, await};
-use futures::io::{CoreAsyncRead, CoreAsyncReadExt, CoreAsyncWrite, CoreAsyncWriteExt};
+use futures::io::{AsyncReadExt, AsyncWriteExt, CoreAsyncRead, CoreAsyncWrite};
 
 #[derive(Debug)]
 pub enum Error<TxError, RxError> {

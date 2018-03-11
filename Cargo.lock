@@ -75,7 +75,7 @@ dependencies = [
 [[package]]
 name = "futures"
 version = "0.2.0-alpha"
-source = "git+https://github.com/Nemo157/futures-rs?branch=core-io#2c3aa6240977ddb8052cd5c4b0f693901573d98d"
+source = "git+https://github.com/Nemo157/futures-rs?branch=core-io#bff40c2912959a517cb8733b93f7e16dd8fdcafc"
 dependencies = [
  "futures-channel 0.2.0-alpha (git+https://github.com/Nemo157/futures-rs?branch=core-io)",
  "futures-core 0.2.0-alpha (git+https://github.com/Nemo157/futures-rs?branch=core-io)",
@@ -115,7 +115,7 @@ source = "git+https://github.com/Nemo157/futures-await?branch=no_std_0.2#3f1fc18
 [[package]]
 name = "futures-channel"
 version = "0.2.0-alpha"
-source = "git+https://github.com/Nemo157/futures-rs?branch=core-io#2c3aa6240977ddb8052cd5c4b0f693901573d98d"
+source = "git+https://github.com/Nemo157/futures-rs?branch=core-io#bff40c2912959a517cb8733b93f7e16dd8fdcafc"
 dependencies = [
  "futures-core 0.2.0-alpha (git+https://github.com/Nemo157/futures-rs?branch=core-io)",
 ]
@@ -123,12 +123,12 @@ dependencies = [
 [[package]]
 name = "futures-core"
 version = "0.2.0-alpha"
-source = "git+https://github.com/Nemo157/futures-rs?branch=core-io#2c3aa6240977ddb8052cd5c4b0f693901573d98d"
+source = "git+https://github.com/Nemo157/futures-rs?branch=core-io#bff40c2912959a517cb8733b93f7e16dd8fdcafc"
 
 [[package]]
 name = "futures-executor"
 version = "0.2.0-alpha"
-source = "git+https://github.com/Nemo157/futures-rs?branch=core-io#2c3aa6240977ddb8052cd5c4b0f693901573d98d"
+source = "git+https://github.com/Nemo157/futures-rs?branch=core-io#bff40c2912959a517cb8733b93f7e16dd8fdcafc"
 dependencies = [
  "futures-channel 0.2.0-alpha (git+https://github.com/Nemo157/futures-rs?branch=core-io)",
  "futures-core 0.2.0-alpha (git+https://github.com/Nemo157/futures-rs?branch=core-io)",
@@ -138,7 +138,7 @@ dependencies = [
 [[package]]
 name = "futures-io"
 version = "0.2.0-alpha"
-source = "git+https://github.com/Nemo157/futures-rs?branch=core-io#2c3aa6240977ddb8052cd5c4b0f693901573d98d"
+source = "git+https://github.com/Nemo157/futures-rs?branch=core-io#bff40c2912959a517cb8733b93f7e16dd8fdcafc"
 dependencies = [
  "futures-core 0.2.0-alpha (git+https://github.com/Nemo157/futures-rs?branch=core-io)",
  "iovec 0.2.0 (git+https://github.com/Nemo157/iovec?branch=no_std)",
@@ -147,7 +147,7 @@ dependencies = [
 [[package]]
 name = "futures-sink"
 version = "0.2.0-alpha"
-source = "git+https://github.com/Nemo157/futures-rs?branch=core-io#2c3aa6240977ddb8052cd5c4b0f693901573d98d"
+source = "git+https://github.com/Nemo157/futures-rs?branch=core-io#bff40c2912959a517cb8733b93f7e16dd8fdcafc"
 dependencies = [
  "futures-channel 0.2.0-alpha (git+https://github.com/Nemo157/futures-rs?branch=core-io)",
  "futures-core 0.2.0-alpha (git+https://github.com/Nemo157/futures-rs?branch=core-io)",
@@ -166,7 +166,7 @@ dependencies = [
 [[package]]
 name = "futures-util"
 version = "0.2.0-alpha"
-source = "git+https://github.com/Nemo157/futures-rs?branch=core-io#2c3aa6240977ddb8052cd5c4b0f693901573d98d"
+source = "git+https://github.com/Nemo157/futures-rs?branch=core-io#bff40c2912959a517cb8733b93f7e16dd8fdcafc"
 dependencies = [
  "either 1.4.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "futures-channel 0.2.0-alpha (git+https://github.com/Nemo157/futures-rs?branch=core-io)",
@@ -192,7 +192,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 [[package]]
 name = "nb"
 version = "0.1.1"
-source = "git+https://github.com/Nemo157/nb?branch=futures-io#ab143105ec4e7b96dff72d354e4c79a92dd028d2"
+source = "git+https://github.com/Nemo157/nb?branch=futures-io#7f9f217ea4a3af96e32c51ea75787dfef042184e"
 dependencies = [
  "futures-core 0.2.0-alpha (git+https://github.com/Nemo157/futures-rs?branch=core-io)",
  "futures-io 0.2.0-alpha (git+https://github.com/Nemo157/futures-rs?branch=core-io)",
