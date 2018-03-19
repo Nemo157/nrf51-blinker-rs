@@ -25,7 +25,7 @@ pub fn main() {
         peripherals.UART0,
         gpio.pin9.into_push_pull_output().downgrade(),
         gpio.pin11.into_floating_input().downgrade(),
-        BAUDRATEW::BAUD1M);
+        BAUDRATEW::BAUD115200);
 
     let (tx, rx) = uart.split();
     let future = nrf51_blinker::main(writer(tx).as_async(), reader(rx).as_async());

@@ -42,7 +42,8 @@ version = "0.2.0-alpha"
 default-features = false
 
 [dependencies.nrf51-hal]
-version = "0.4.2"
+git = "https://github.com/Nemo157/nrf51-hal"
+branch = "nb-serial"
 default-features = false
 features = ["rt"]
 
